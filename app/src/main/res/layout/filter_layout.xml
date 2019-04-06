@@ -1,0 +1,50 @@
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <include layout="@layout/nav_filter"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:textColor="@color/orange"
+        android:text="@string/get_trucks_by_distance"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:textSize="18sp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="8dp"/>
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:minHeight="6dip"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:maxHeight="6dip"
+        android:progressDrawable="@drawable/orange_scrubber_progress"
+        android:thumb="@drawable/orange_scrubber_control"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/seekBar_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="0 Km"
+        android:textSize="20dp"
+        android:textColor="@color/orange"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="8dp"/>
+</LinearLayout>

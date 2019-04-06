@@ -1,0 +1,188 @@
+<resources>
+    <string name="description">TruckUp application</string>
+    <string name="app_name">TruckUp</string>
+
+    <string name="Orders">Orders</string>
+    <string name="no_orders">No Orders</string>
+    <string name="successfully_ordered">Successfully ordered</string>
+    <string name="please_choose_an_option">Please choose an option</string>
+    <string name="order">Order</string>
+    <string name="ordered">Ordered</string>
+    <string name="lang">العربية</string>
+    <string name="policy">Privacy Policy</string>
+    <string name="about">About App</string>
+    <string name="logout">Logout</string>
+    <string name="login">Sign In</string>
+    <string name="email">E-mail</string>
+    <string name="password">Password</string>
+    <string name="password_confirm">Confirm Password</string>
+    <string name="forget_password">Forget your Password?</string>
+    <string name="user_not_enabled">Account is disabled</string>
+    <string name="register">Register</string>
+    <string name="sign_up">Sign up</string>
+    <string name="full_name">Full Name*</string>
+    <string name="fisrt_name">First Name*</string>
+    <string name="last_name">Last Name*</string>
+    <string name="mob_number">Mobile Number</string>
+    <string name="activate">Activate</string>
+    <string name="activate_prev_accout_des">If You have An Account.Please Re-Activate</string>
+    <string name="type_activation_code">Type Activation Code : </string>
+    <string name="resend_activation_code">Resend Activation Code</string>
+    <string name="cur_email">Email : </string>
+    <string name="number_error_des">If Email is error. You can remove the registration and register again </string>
+    <string name="register_again">Register Again?</string>
+    <string name="send">Send</string>
+
+    <string name="are_sure_to_re_register">Are you sure to register again</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+    <string name="cancel_done">Cancel Done!</string>
+    <string name="activation_done">Activation Done</string>
+    <string name="activation_code_resent_please_wait">Activation code sent .. Please Wait</string>
+
+    <string name="policy_body">
+The Operator is committed to protecting the privacy and personal information of its website &amp;
+application users through the following:
+\n\n
+Any personal information collected through use of the Operator website &amp; application will be
+treated with the highest standards of security and confidentiality.
+\n\n
+The Operator will take precautions to prevent the loss, misuse or alteration of personal information, including storing personal information on a secure database.
+\n\n
+The Operator may collect, store, and use the following kinds of personal data:
+\n\n
+
+\u2022 Information about website &amp; application users’ computers and about their visits to and
+use of the Operator Website &amp; application (including IP address, geographical location,
+browser type, and length of visit); and information voluntarily provided to the Operator
+through use of the Operator Website &amp; Application.
+\n
+\u2022 The Operator uses Google Analytics, which generates statistical information about
+website use, using cookies which are stored on users´ computers. Google stores this
+information, and its privacy policy can be viewed at http://www.google.com/privacypolicy.html.
+\n
+\u2022 The Operator may use website users´ personal information to: 
+\n
+- Send email notifications, announcements, information or other marketing communications.
+\n
+- Communicate and follow up about enquiries, suggestions and complaints.
+\n\n
+The Operator will not disclose personal information to third parties, except as provided below:
+\n\n
+\u2022 When required to do so by law.
+\n
+\u2022 In connection with any legal proceedings.
+\n
+    </string>
+
+    <string name="about_app_body">
+Special application for registering Trucks Drivers and offices by customers, drivers and users.
+
+    </string>
+
+    <!-- update app -->
+    <string name="app_needs_to_be_update">App needs to be updated</string>
+    <string name="do_you_want_to_update_now">Do you want to update now?</string>
+    <string name="from_google_play">Google Play (recommended)</string>
+    <string name="from_website">From Website</string>
+    <string name="update">Update</string>
+    <string name="later">Later</string>
+
+
+    <!--  validate  -->
+    <string name="username_required">Username is required</string>
+    <string name="password_required">Password is required</string>
+
+    <string name="password_length">Password must be 6 character at least</string>
+    <string name="password_confirm_not_equal_password">Password Confirm is not equal Password</string>
+
+    <string name="full_name_required">Full Name field is required</string>
+    <string name="first_name_required">First Name field is required</string>
+    <string name="last_name_required">Last Name field is required</string>
+    <string name="mobile_required">Mobile field is required</string>
+    <string name="mobile_number_10">Mobile Number must be 10 digits</string>
+    <string name="mobile_number_start_09">Mobile Number must start with 09</string>
+    <string name="code_required">Activation Code Required</string>
+
+    <!---  error message -->
+    <string name="error_in_connection">Connection Error</string>
+    <string name="fail_try_agian">Fail, Try Again</string>
+
+    <!-- success message -->
+    <string name="register_success">successfully registered</string>
+    <string name="sms_sent_success_click_here">SMS sent to your mobile .. Please click here to activate</string>
+    <string name="you_have_previous_account">You have previous account</string>
+
+
+    <!--truck strings-->
+    <string name="new_order">New Order</string>
+    <string name="set_order">set Order</string>
+    <string name="unset_order">unset Order</string>
+    <string name="age">Age</string>
+    <string name="setting">settings</string>
+    <string name="online_trucks">Online Trucks</string>
+    <string name="profile">Profile</string>
+    <string name="title_activity_order">OrderActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="pending">pending</string>
+    <string name="completed">Completed</string>
+    <string name="canceled">Canceled</string>
+    <string name="yes">yes</string>
+    <string name="are_sure_to_book">Are you sure you want to book?</string>
+    <string name="your_account_is_not_active">Activate Account</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="no_pending_orders">No pending orders yet</string>
+    <string name="customer_location">Customer Location</string>
+    <string name="no_completed_orders">No Completed Orders yet</string>
+    <string name="login_text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</string>
+    <string name="personal_info">Personal Information</string>
+    <string name="name">Name</string>
+    <string name="sur_name">Surname</string>
+    <string name="gender">Gender</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <!--<string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">AIzaSyCAqe6aGTQdu84nof-jsnWMj1C2jlewe2A</string>-->
+    <!--<string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">AIzaSyA7rURa3Vje4B3SSs89CPMzo_DLNfvvIx0</string>-->
+    <string name="birth_date">Birth Date</string>
+    <string name="pick_date">clidk to pick date</string>
+    <string name="address">Adress</string>
+    <string name="registeration_info">Registeration Information</string>
+    <string name="i_accept">I Accept</string>
+    <string name="terms"><u>app terms and conditions</u></string>
+    <string name="phone">Phone</string>
+    <string name="enter_email_reset">Please enter your email  to search for your account</string>
+    <string name="reset_sent">Type reset code we sent to your email</string>
+    <string name="check">Check</string>
+    <string name="new_password">New Password</string>
+    <string name="reset">Reset</string>
+    <string name="description_text">Ancient Trucks company established since 1965 by the business man John David in Dubai</string>
+    <string name="request">Request</string>
+    <string name="truck_data">Truck Data Sheet</string>
+    <string name="nearest_trucks">Nearest Trucks</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="available">Available</string>
+    <string name="gps_info">GPS Info</string>
+    <string name="ranking">Ranking</string>
+    <string name="address_details">Address Details</string>
+    <string name="map_text">Pick destination from map and app location details</string>
+    <string name="company_title">Company Information</string>
+    <string name="my_orders">My Orders</string>
+    <string name="view_current_location">View Current Location</string>
+    <string name="frome_text">From</string>
+    <string name="to_text">To</string>
+    <string name="no_canceled_orders">No canceled orders yet</string>
+    <string name="on_going">On Going</string>
+    <string name="no_accepted_orders">No accepted orders yet</string>
+    <string name="rate_this_ride">Rate This Ride</string>
+    <string name="reorder">Resend Order Request</string>
+    <string name="search">Search</string>
+    <string name="you_can_filter">You Can Filter Your Search</string>
+    <string name="trucks_distance">Trucks Distance</string>
+    <string name="get_trucks_by_distance">Sort trucks by distance</string>
+    <string name="you_rated">You Rated This Order</string>
+
+</resources>

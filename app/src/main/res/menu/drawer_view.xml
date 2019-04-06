@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/online_trucks"
+            android:icon="@drawable/ic_truck"
+            android:iconTint="@color/white"
+            android:title="@string/online_trucks" />
+        <item
+            android:id="@+id/my_orders"
+            android:icon="@drawable/ic_telegram"
+            android:title="@string/Orders" />
+        <item
+            android:id="@+id/profile"
+            android:icon="@drawable/ic_profile"
+            android:title="@string/profile" />
+        <item
+            android:id="@+id/setting"
+            android:icon="@drawable/ic_settings"
+            android:title="@string/setting" />
+        <item
+            android:id="@+id/policy"
+            android:icon="@drawable/ic_file_invoice"
+            android:title="@string/policy" />
+        <item
+            android:id="@+id/about"
+            android:icon="@drawable/ic_users"
+            android:title="@string/about" />
+        <item
+            android:id="@+id/lang"
+            android:icon="@drawable/ic_language"
+            android:title="@string/lang" />
+        <item
+            android:id="@+id/logout"
+            android:icon="@drawable/ic_sign_out"
+            android:title="@string/logout" />
+    </group>
+</menu>

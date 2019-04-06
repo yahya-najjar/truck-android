@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="description">Truck App</string>
+    <string name="app_name">Truck</string>
+
+
+    <string name="Orders">الطلبات</string>
+    <string name="no_orders">لا يوجد طلبات</string>
+    <string name="successfully_ordered">تم الطلب بنجاح</string>
+    <string name="please_choose_an_option">يرجى اختيار احد الخيارات</string>
+    <string name="order">طلب</string>
+    <string name="ordered">تم الطلب</string>
+    <string name="lang">English</string>
+    <string name="policy">سياسة الخصوصية</string>
+    <string name="about">حول البرنامج</string>
+    <string name="logout">تسجيل خروج</string>
+
+    <string name="policy_body">
+ المشغل  مسؤول عن حماية البيانات الشخصية وخصوصية مستخدمي التطبيق وفقًا لما يلي :\n
+\n
+    · الحفاظ على أية معلومة ترصد أثناء استعمال التطبيق بأعلى درجات السرية والأمان
+\n
+    · يتخذ المشغل التدابير اللازمة لمنع فقدان المعلومات الشخصية أو إساءة استعمالها أو تغييرها بما فيها حفظ هذه المعلومات بقاعدة بيانات آمنة.
+\n\n
+    · يجوز للمشغل رصد وحفظ واستعمال البيانات الشخصية كالتالي :
+\n
+    - معلومات عن مستخدمي التطبيق وزيارتهم له واستعمالهم إياه (ويشمل عنوان المعرف والموقع الإقليمي ونوع المتجر ومدة الاستخدام وعدد الشكاوي المرسلة)
+\n
+    - كل ما يرصد من معلومات يسجلها الزائر ملء إرادته أثناء التسجيل في التطبيق
+\n\n
+    · يجوز للمشغل استعمال البيانات الشخصية لمستخدمي الموقع في الحالتين التاليتين:
+\n
+    - إرسال إشعارات أو إعلانات أو معلومات أو حملات ترويجية.
+\n
+    - التواصل مع المستخدم ومتابعة الاستفسارات والاقتراحات والشكاوى
+\n
+    · لن  يفصح المشغل عن أية بيانات شخصية لأي جهة إلا في حالة أن يتم طلب ذلك بشكل قانوني إذا كانت بصدد أية إجراءات قانونية
+    </string>
+
+
+    <string name="about_app_body">
+        تطبيق لتسجيل سائقين الشاحنات وكاتب الشحن (السائقين- الزبائن-الموظفين )
+    </string>
+
+
+    <string name="login">تسجيل دخول</string>
+    <string name="email">اسم المستخدم* (البريد الالكتروني)</string>
+    <string name="password">كلمة المرور</string>
+    <string name="password_confirm">تأكيد كلمة المرور</string>
+
+    <string name="forget_password">نسيت كلمة المرور</string>
+
+    <string name="user_not_enabled">الحساب معطل</string>
+
+
+    <string name="register">التسجيل</string>
+    <string name="sign_up">تسجيل</string>
+    <string name="full_name">الاسم*</string>
+    <string name="fisrt_name">الاسم*</string>
+    <string name="last_name">الكنية*</string>
+    <string name="mob_number">رقم جوالك</string>
+
+    <string name="activate">تفعيل</string>
+
+    <string name="activate_prev_accout_des">إذا كنت مسجل مسبقا أدخل رقم الجوال وانقر تفعيل</string>
+
+
+    <string name="type_activation_code">ادخل كود التفعيل :</string>
+    <string name="resend_activation_code">إعادة إرسال كود التفعيل؟</string>
+    <string name="cur_email">البريد الالكتروني : </string>
+    <string name="number_error_des">في حال وجود خطأ في البريد الالكتروني المسجل يمكن حذف التسجيل وإعادة التسجيل من جديد</string>
+    <string name="register_again">إعادة التسجيل؟</string>
+    <string name="send">إرسال</string>
+
+    <string name="are_sure_to_re_register">هل تريد تأكيد إعادة التسجيل</string>
+    <string name="ok">موافق</string>
+    <string name="cancel">إلغاء</string>
+    <string name="cancel_done">تم الإلغاء</string>
+    <string name="activation_done">تم تفعيل الحساب</string>
+    <string name="activation_code_resent_please_wait">تم إعادة ارسال كود التفعيل .. يرجى الانتظار قليلا</string>
+
+
+
+    <!-- update app -->
+    <string name="app_needs_to_be_update">يجب تحديث التطبيق</string>
+    <string name="do_you_want_to_update_now">هل تريد التحديث الآن؟</string>
+    <string name="from_google_play">Google Play (مستحسن)</string>
+    <string name="from_website">من الموقع</string>
+    <string name="update">تحديث</string>
+    <string name="later">لاحقا</string>
+
+
+    <!--  validate  -->
+    <string name="username_required">اسم المستخدم مطلوب</string>
+    <string name="password_required">كلمة السر مطلوبة</string>
+
+    <string name="password_length">كلمة المرور 6 احرف على الاقل</string>
+    <string name="password_confirm_not_equal_password">تأكيد كلمة المرور غير مطابق</string>
+
+    <string name="full_name_required">الاسم مطلوب</string>
+    <string name="first_name_required">الاسم مطلوب</string>
+    <string name="last_name_required">الكنية مطلوبة</string>
+    <string name="mobile_required">الموبايل مطلوب</string>
+    <string name="mobile_number_10">يجب ان يكون رقم الموبايل 10 أرقام</string>
+    <string name="mobile_number_start_09">يجب ان يبدا الرقم ب 09</string>
+    <string name="code_required">كود التفعيل مطلوب</string>
+
+
+    <!---  error messge -->
+    <string name="error_in_connection">خطأ في الاتصال</string>
+    <string name="fail_try_agian">فشل يرجى المحاولة مرة أخرى</string>
+
+    <!-- success message -->
+    <string name="register_success">تم التسجيل بنجاح</string>
+    <string name="sms_sent_success_click_here">تم إرسال رسالة قصيرة إلى جوالك انقر هنا لتفعيل الحساب</string>
+
+    <string name="you_have_previous_account">لديك حساب سابق</string>
+
+    <!--truck strings-->
+    <string name="new_order">طلب رحلة</string>
+    <string name="set_order">تأكيد الرجلة</string>
+    <string name="unset_order">الغاء الرحلة</string>
+    <string name="age">العمر</string>
+    <string name="setting">الإعدادات</string>
+    <string name="online_trucks">الشاحنات المتاحة</string>
+    <string name="profile">الملف الشخصي</string>
+    <string name="pending">pending</string>
+    <string name="completed">Completed</string>
+    <string name="canceled">Canceled</string>
+    <string name="title_activity_order">OrderActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="yes">yes</string>
+    <string name="are_sure_to_book">Are you sure you want to book?</string>
+    <string name="your_account_is_not_active">Activate Account</string>
+    <string name="no_completed_orders">No Completed Orders yet</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="no_pending_orders">No pending orders yet</string>
+    <string name="customer_location">Customer Location</string>
+    <string name="login_text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</string>
+    <string name="personal_info">Personal Information</string>
+    <string name="sur_name">Surname</string>
+    <string name="gender">Gender</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="name">Name</string>
+    <string name="birth_date">Birth Date</string>
+    <string name="pick_date">clidk to pick date</string>
+    <string name="address">Adress</string>
+    <string name="registeration_info">Registeration Information</string>
+    <string name="i_accept">I Accept</string>
+    <string name="terms">app terms and conditions</string>
+    <string name="phone">Phone</string>
+    <string name="enter_email_reset">Please enter your email  to search for your account</string>
+    <string name="reset_sent">Type reset code we sent to your email</string>
+    <string name="check">Check</string>
+    <string name="new_password">New Password</string>
+    <string name="reset">Reset</string>
+    <string name="description_text">Anci ent T r ucks company es t abl i s hed s i nce 1965 by t he bus i nes s man J ohn Davi d i n Dubai</string>
+    <string name="request">Request</string>
+    <string name="truck_data">Truck Data Sheet</string>
+    <string name="nearest_trucks">Nearest Trucks</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="available">Available</string>
+    <string name="gps_info">GPS Info</string>
+    <string name="ranking">Ranking</string>
+    <string name="address_details">Address Details</string>
+    <string name="map_text">Pick destination from map and app location details</string>
+    <string name="company_title">Company Information</string>
+    <string name="my_orders">My Orders</string>
+    <string name="view_current_location">View Current Location</string>
+    <string name="frome_text">From</string>
+    <string name="to_text">To</string>
+    <string name="no_canceled_orders">No canceled orders yet</string>
+    <string name="on_going">On Going</string>
+    <string name="no_accepted_orders">No accepted orders yet</string>
+    <string name="rate_this_ride">Rate This Ride</string>
+    <string name="reorder">Resend Order Request</string>
+    <string name="search">Search</string>
+    <string name="trucks_distance">Trucks Distance</string>
+    <string name="get_trucks_by_distance">Sort trucks by distance</string>
+    <string name="you_rated">You Rated This Order</string>
+</resources>

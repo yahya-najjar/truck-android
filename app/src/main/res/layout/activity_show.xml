@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activities.ShowActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingBottom="100dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="228dp">
+
+                    <ImageView
+                        android:id="@+id/image"
+                        android:layout_width="match_parent"
+                        android:layout_height="195dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/nav_card"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/available"
+                        android:textColor="@color/white"
+                        android:textAlignment="center"
+                        android:background="@color/orange"/>
+
+                </FrameLayout>
+            </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="220dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/truck_model"
+                        android:textColor="@color/custom_grey"
+                        android:layout_marginStart="10sp"
+                        android:text="Mercedes benze G312i"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawablePadding="5dp"
+                        android:id="@+id/driver_name"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginEnd="10sp"
+                        android:textColor="@color/custom_grey"
+                        android:text="Driver name"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10sp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="15 Km"
+                        android:layout_marginStart="10sp"
+                        android:id="@+id/distance"
+                        android:layout_marginTop="3dp"
+                        android:drawablePadding="5dp"
+                        android:textColor="@color/orange"/>
+                    <Button
+                        android:layout_width="80dp"
+                        android:layout_height="25dp"
+                        android:layout_alignParentEnd="true"
+                        android:id="@+id/gps_info_btn"
+                        android:text="@string/gps_info"
+                        android:textAlignment="center"
+                        android:paddingLeft="5dp"
+                        android:textAllCaps="false"
+                        android:layout_marginEnd="10sp"
+                        android:onClick="GpsInfo"
+                        android:textColor="@color/white"
+                        android:background="@drawable/rounded"
+                        />
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:textAlignment="center"
+                    android:textSize="16dp"
+                    android:textColor="#000"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center|center_vertical"
+                    android:text="@string/description_text"/>
+
+                <Button
+                    android:layout_width="150dp"
+                    android:layout_height="36dp"
+                    android:layout_marginTop="20dp"
+                    android:id="@+id/request_btn"
+                    android:text="@string/request"
+                    android:textAlignment="center"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center|center_vertical"
+                    android:textAllCaps="false"
+                    android:textSize="20dp"
+                    android:textColor="@color/white"
+                    android:background="@drawable/rounded"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center|center_vertical"
+                    android:layout_marginTop="10dp"
+                    android:textColor="#000"
+                    android:textSize="26dp"
+                    android:textStyle="bold"
+                    android:text="Driver name"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center"
+                    android:gravity="center">
+                    <de.hdodenhof.circleimageview.CircleImageView xmlns:android="http://schemas.android.com/apk/res/android"
+                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/truck_image"
+                        android:layout_marginTop="10dp"
+                        android:layout_width="105dp"
+                        android:layout_height="105dp"
+                        android:layout_marginStart="30dp"
+                        android:src="@drawable/nav_card"/>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/driver_name_2"
+                            android:layout_width="200dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="30dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="10dp"
+                            android:paddingRight="70dp"
+                            android:text="Driver name"
+                            android:textAlignment="center"
+                            android:textColor="@color/custom_grey" />
+                        <TextView
+                            android:id="@+id/supplier_name"
+                            android:layout_width="200dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="30dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="5dp"
+                            android:paddingRight="60dp"
+                            android:text="Supplier name"
+                            android:textAlignment="center"
+                            android:textColor="@color/custom_grey" />
+
+                        <TextView
+                            android:id="@+id/driver_phone"
+                            android:layout_width="200dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="30dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="5dp"
+                            android:paddingRight="50dp"
+                            android:text="+963963963963"
+                            android:textAlignment="center"
+                            android:textColor="@color/custom_grey" />
+
+                        <TextView
+                            android:id="@+id/driver_email"
+                            android:layout_width="250dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="30dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="5dp"
+                            android:paddingRight="50dp"
+                            android:text="driver.driver@gmail.com"
+                            android:textAlignment="center"
+                            android:textColor="@color/custom_grey" />
+
+                        <TextView
+                            android:id="@+id/driver_location"
+                            android:layout_width="250dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="30dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="5dp"
+                            android:paddingRight="125dp"
+                            android:text="Sharaja UAE"
+                            android:textAlignment="center"
+                            android:textColor="@color/custom_grey" />
+
+                        <TextView
+                            android:id="@+id/capacity"
+                            android:layout_width="250dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="30dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="5dp"
+                            android:paddingRight="150dp"
+                            android:text="2000 kg"
+                            android:textAlignment="center"
+                            android:textColor="@color/custom_grey" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="300dp"
+                    android:layout_height="1dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/colorPrimaryDark" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="3dp"
+                    android:textColor="@color/custom_grey"
+                    android:text="@string/ranking"/>
+
+                <RatingBar
+                android:id="@+id/rating"
+                style="@android:style/Widget.DeviceDefault.Light.RatingBar.Small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/distance"
+                android:layout_alignEnd="@+id/distance"
+                android:layout_marginTop="3dp"
+                android:isIndicator="true"
+                android:numStars="5"
+                android:rating="4"
+                android:layout_gravity="center"
+                android:stepSize="0.1"
+                android:theme="@style/RatingBar" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="5/5"
+                    android:id="@+id/rating_txt"
+                    android:textColor="@color/colorPrimaryDark"/>
+
+            </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
