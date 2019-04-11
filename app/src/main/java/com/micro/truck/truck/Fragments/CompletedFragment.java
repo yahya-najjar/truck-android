@@ -88,6 +88,7 @@ public class CompletedFragment extends MasterFragment implements OrderRecyclerVi
 
         UserId = readSharedPreferenceInt("UserId");
         Token = readSharedPreferenceString("token");
+        mLoadingDialog.showDialog();
         JSONObject jsonParam = new JSONObject();
         try {
             jsonParam.put("limit", 10);
@@ -108,8 +109,7 @@ public class CompletedFragment extends MasterFragment implements OrderRecyclerVi
                 // Create the root JSONObject from the JSON string.
                 try {
                     JSONObject jsonin = new JSONObject(response);
-                    Log.d("content", String.valueOf(jsonin));
-
+                    mLoadingDialog.closeDialog();
                     result = jsonin.optString("result");
                     if (result.equals("success")){
 

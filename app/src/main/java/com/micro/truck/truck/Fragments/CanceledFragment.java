@@ -79,14 +79,12 @@ public class CanceledFragment extends MasterFragment implements OrderRecyclerVie
         UserId = readSharedPreferenceInt("UserId");
         Token = readSharedPreferenceString("token");
         JSONObject jsonParam = new JSONObject();
+        mLoadingDialog.showDialog();
         try {
             jsonParam.put("limit", 10);
             jsonParam.put("lat", 0);
             jsonParam.put("lng", 0);
             jsonParam.put("status", -2);
-            //jsonParam.put("FCM_Token", FCM_Token);
-            //jsonParam.put("Platform", "android");
-
         }
         catch (Exception e) {}
 
@@ -98,7 +96,7 @@ public class CanceledFragment extends MasterFragment implements OrderRecyclerVie
                 // Create the root JSONObject from the JSON string.
                 try {
                     JSONObject jsonin = new JSONObject(response);
-                    Log.d("content", String.valueOf(jsonin));
+                    mLoadingDialog.closeDialog();
 
                     result = jsonin.optString("result");
                     if (result.equals("success")){

@@ -118,9 +118,6 @@ public class PendingFragment extends MasterFragment implements OrderRecyclerView
             jsonParam.put("lat", 0);
             jsonParam.put("lng", 0);
             jsonParam.put("status", 0);
-            //jsonParam.put("FCM_Token", FCM_Token);
-            //jsonParam.put("Platform", "android");
-
         }
         catch (Exception e) {}
 
@@ -132,7 +129,6 @@ public class PendingFragment extends MasterFragment implements OrderRecyclerView
                 // Create the root JSONObject from the JSON string.
                 try {
                     JSONObject jsonin = new JSONObject(response);
-                    Log.d("content", String.valueOf(jsonin));
 
                     result = jsonin.optString("result");
                     mLoadingDialog.closeDialog();
@@ -355,7 +351,6 @@ public class PendingFragment extends MasterFragment implements OrderRecyclerView
                                     break;
                             }
 
-//                            this.finish();
                         }
                     } catch (JSONException e) {
                         e.printStackTrace();
@@ -366,7 +361,6 @@ public class PendingFragment extends MasterFragment implements OrderRecyclerView
             }).Execute();
 
         }
-//          Toast.makeText(this, "You clicked " + mAdapter.getItem(position) + " on row number " + position, Toast.LENGTH_SHORT).show();
 
     }
 
