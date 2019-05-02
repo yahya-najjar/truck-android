@@ -585,9 +585,9 @@ public class MainActivity extends AppCompatActivityMenu implements MyRecyclerVie
 
             @Override
             public void onStopTrackingTouch(SeekBar seekBar) {
+                Log.d("seekstoped","seek_stoped");
                 getData();
                 seekBar_text.setText(String.valueOf(seekBar.getProgress()) + " Km");
-
             }
         });
 

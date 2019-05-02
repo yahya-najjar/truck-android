@@ -3,7 +3,6 @@
     android:id="@+id/my_pg"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    style="@style/CustomProgressBar"
-    android:progressDrawable="@drawable/custom_progressbar">
+    android:indeterminateDrawable="@drawable/custom_progressbar">
 
 </ProgressBar>

@@ -8,6 +8,8 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.graphics.Color;
+import android.location.Address;
+import android.location.Geocoder;
 import android.location.Location;
 import android.location.LocationListener;
 import android.location.LocationManager;
@@ -54,8 +56,10 @@ import com.micro.truck.truck.Utils.GPSTracker;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Locale;
 import java.util.Objects;
 
 import static com.micro.truck.truck.Masters.AppCompatActivityMenu.APP_PREFS;
@@ -84,6 +88,7 @@ public class MapActivity extends AppCompatActivityMenu implements OnMapReadyCall
     String details="";
     EditText map_details;
     Button cancel;
+    String location;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -420,13 +425,29 @@ public class MapActivity extends AppCompatActivityMenu implements OnMapReadyCall
         JSONObject jsonParam = new JSONObject();
         UserId = readSharedPreferenceInt("UserId");
         Token = readSharedPreferenceString("token");
+        Locale locale = new Locale(curr_lang);
+        Geocoder gc=new Geocoder(getApplicationContext(), locale);
+        StringBuilder builder = new StringBuilder();
+        try {
+            List<Address> addresses = gc.getFromLocation(latitude, longitude, 1);//here we pass two static lati longi of white house and set the max return value 1
+            if (addresses.size()>0){
+                Address address=addresses.get(0);//i featched the result from the list
+                //looping into the max address line contain the result
+                builder.append(address.getCountryName()+ ", " + address.getAdminArea() + ", " + address.getSubAdminArea()); //appending the addressline of the given latitude longitude
+                location =builder.toString();
+            }
+
+        } catch (IOException e) {
+            e.printStackTrace();
+            builder.append("");
+        }
 
         try {
             jsonParam.put("comment", details);
             jsonParam.put("truck_id", truck_id);
             jsonParam.put("lat", latitude);
             jsonParam.put("lng", longitude);
-            jsonParam.put("location", "Damascus");
+            jsonParam.put("location", location);
 
         }
         catch (Exception e) {}

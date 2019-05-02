@@ -100,14 +100,14 @@ public class LoginActivity extends AppCompatActivityMenu {
 
         pg.setVisibility(View.VISIBLE);
 
-//        FCM_Token = readSharedPreferenceFCMString("FCM_Token");
+        FCM_Token = readSharedPreferenceFCMString("FCM_Token");
         JSONObject jsonParam = new JSONObject();
         try {
             jsonParam.put("email", email);
             jsonParam.put("password", password);
             jsonParam.put("type",1);
-            //jsonParam.put("FCM_Token", FCM_Token);
-            //jsonParam.put("Platform", "android");
+            jsonParam.put("FCM_Token", FCM_Token);
+            jsonParam.put("Platform", "android");
 
         }
         catch (Exception e) {}

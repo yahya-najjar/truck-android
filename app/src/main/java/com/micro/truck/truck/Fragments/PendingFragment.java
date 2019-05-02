@@ -52,6 +52,7 @@ import java.util.Objects;
 import static android.content.Context.LOCATION_SERVICE;
 import static android.content.Context.MODE_PRIVATE;
 import static com.micro.truck.truck.Masters.AppCompatActivityMenu.APP_PREFS;
+import static com.micro.truck.truck.Masters.AppCompatActivityMenu.curr_lang;
 
 
 public class PendingFragment extends MasterFragment implements OrderRecyclerViewAdapter.ItemClickListener , LocationListener {
@@ -75,6 +76,7 @@ public class PendingFragment extends MasterFragment implements OrderRecyclerView
     int UserId=0;
     String Token="";
     List<Address> addresses;
+    String location;
     public ArrayList<Order> pending_orders = new ArrayList<>();
 
     public PendingFragment() {
@@ -304,8 +306,25 @@ public class PendingFragment extends MasterFragment implements OrderRecyclerView
             UserId = readSharedPreferenceInt("UserId");
             Token = readSharedPreferenceString("token");
 
+            Locale locale = new Locale(curr_lang);
+            Geocoder gc=new Geocoder(getContext(), locale);
+            StringBuilder builder = new StringBuilder();
             try {
-                jsonParam.put("location", "damascus");
+                List<Address> addresses = gc.getFromLocation(latitude, longitude, 1);//here we pass two static lati longi of white house and set the max return value 1
+                if (addresses.size()>0){
+                    Address address=addresses.get(0);//i featched the result from the list
+                    //looping into the max address line contain the result
+                    builder.append(address.getCountryName()+ ", " + address.getAdminArea() + ", " + address.getSubAdminArea()); //appending the addressline of the given latitude longitude
+                    location =builder.toString();
+                }
+
+            } catch (IOException e) {
+                e.printStackTrace();
+                builder.append("");
+            }
+
+            try {
+                jsonParam.put("location", location);
                 jsonParam.put("order_id", mAdapter.getItem(position).getId());
                 jsonParam.put("lat", latitude);
                 jsonParam.put("lng", longitude);

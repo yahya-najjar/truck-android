@@ -57,7 +57,7 @@ public class SendGetJsonApi  {
         }
         else
         {
-            return "http://94.206.36.74/truck/api/";
+            return "http://go-dg.co/truck/api/";
 //            return "http://188.160.3.18:96/truck/public/api/";
 //            return  "http://192.168.170.32:8000/api/";
 //            return  "http://10.0.0.14:8000/api/";
